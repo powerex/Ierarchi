@@ -4,6 +4,8 @@
 #include "rebase/headers/Person.h"
 #include "rebase/headers/Firm.h"
 #include "rebase/headers/Employee.h"
+#include "rebase/headers/Order.h"
+
 
 int main() {
 
@@ -15,7 +17,7 @@ int main() {
     list.add(o2);
     list.show();*/
 
-    Showable* value = new Employee;
+    Showable* value = new Order;
 
     value->show();
 

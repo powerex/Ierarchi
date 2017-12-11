@@ -9,7 +9,6 @@ protected:
 public:
     Employee(const Date &birthday, const std::string &name, const std::string &surname, const Phone &phone,
              const std::string &post);
-
     Employee();
     ~Employee() override ;
     void show() override;

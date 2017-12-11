@@ -3,14 +3,16 @@
 
 #include "Firm.h"
 #include "Employee.h"
+#include "Firm.h"
 
-class Order: public Firm {
+class Order: public Showable {
 protected:
     Date date;
+    Firm* firm;
     double amount;
-    Employee employee;
+    Employee* compiler;
 public:
-    Order(const Date &date, double amount, const Employee &employee);
+    Order(const Date &date, Firm *firm, double amount, Employee *compiler);
     Order();
     ~Order() override;
     void show() override;

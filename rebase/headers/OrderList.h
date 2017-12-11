@@ -9,7 +9,7 @@ class OrderList: public Showable {
 protected:
     std::vector<Order> list;
 public:
-    OrderList(const std::vector<Order> &list);
+    explicit OrderList(const std::vector<Order> &list);
     OrderList();
     virtual ~OrderList();
 
